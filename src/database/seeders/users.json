@@ -1,0 +1,591 @@
+
+[
+  {
+    "name": "Alberto da Silva Filho",
+    "status": true,
+    "email": "alberto.filho@poli.digital",
+    "password": "Filho@Coins2023"
+  },
+  {
+    "name": "Aldinelly Aparecida Rehbein",
+    "status": true,
+    "email": "aldinelly@poli.digital",
+    "password": "Rehbein@Coins2023"
+  },
+  {
+    "name": "Alessandra Jerônimo dos Santos",
+    "status": true,
+    "email": "alessandra.santos@poli.digital",
+    "password": "Jeronimo@Coins2023"
+  },
+  {
+    "name": "Alexandre Dias de Souza",
+    "status": true,
+    "email": "alexandre@poli.digital",
+    "password": "Dias@Coins2023"
+  },
+  {
+    "name": "Aline De Jesus Paiva",
+    "status": true,
+    "email": "aline.paiva@poli.digital",
+    "password": "Jesus@Coins2023"
+  },
+  {
+    "name": "Allan Bezerra Santos",
+    "status": true,
+    "email": "allan.bezerra@poli.digital",
+    "password": "Bezerra@Coins2023"
+  },
+  {
+    "name": "Ana Gabriella Freitas Hoffmann",
+    "status": true,
+    "email": "gabi.hoffmann@poli.digital",
+    "password": "Freitas@Coins2023"
+  },
+  {
+    "name": "Ana Laura Palmeira Mendes",
+    "status": false,
+    "email": "ana.laura@poli.digital",
+    "password": "Palmeira@Coins2023"
+  },
+  {
+    "name": "André Murilo Alves do Nascimento",
+    "status": true,
+    "email": "andre.murilo@poli.digital",
+    "password": "AlvesNascimento@Coins2023"
+  },
+  {
+    "name": "Bruna Gonzaga Mendes",
+    "status": true,
+    "email": "bruna.mendes@poli.digital",
+    "password": "Gonzaga@Coins2023"
+  },
+  {
+    "name": "Bruno Ferrari Torres de Lima",
+    "status": true,
+    "email": "bruno.lima@poli.digital",
+    "password": "Ferrari@Coins2023"
+  },
+  {
+    "name": "Bruno Morais de Couto",
+    "status": true,
+    "email": "bruno.couto@poli.digital",
+    "password": "Couto@Coins2023"
+  },
+  {
+    "name": "Catarina Gobbo Nascimento Andrade",
+    "status": true,
+    "email": "catarina.gobbo@poli.digital",
+    "password": "Gobbo@Coins2023"
+  },
+  {
+    "name": "Daniel Moraes Dos Santos",
+    "status": false,
+    "email": "daniel.santos@poli.digital",
+    "password": "Moraes@Coins2023"
+  },
+  {
+    "name": "Deise Cristina Soares Servolo",
+    "status": false,
+    "email": "deise.cristina@poli.digital",
+    "password": "Servolo@Coins2023"
+  },
+  {
+    "name": "Desito Davila da Silva",
+    "status": true,
+    "email": "desito.silva@poli.digital",
+    "password": "Davila@Coins2023"
+  },
+  {
+    "name": "Eduardo Policarpo da Silva",
+    "status": true,
+    "email": "eduardo.policarpo@poli.digital",
+    "password": "Policarpo@Coins2023"
+  },
+  {
+    "name": "Eduardo Praxedes Jorge",
+    "status": true,
+    "email": "eduardo.praxedes@poli.digital",
+    "password": "Praxedes@Coins2023"
+  },
+  {
+    "name": "Enzo Sousa Forte Andrade ",
+    "status": true,
+    "email": "enzo.forte@poli.digital",
+    "password": "Forte@Coins2023"
+  },
+  {
+    "name": "Erika Barros Franco Amaral",
+    "status": true,
+    "email": "erika.barros@poli.digital",
+    "password": "Barros@Coins2023"
+  },
+  {
+    "name": "Gabriel Henrique Sousa Silva",
+    "status": true,
+    "email": "gabriel.henrique@poli.digital",
+    "password": "GH@Coins2023"
+  },
+  {
+    "name": "Gabriel Luiz Nunes de Queiroz",
+    "status": true,
+    "email": "gabriel.queiroz@poli.digital",
+    "password": "Queiroz@Coins2023"
+  },
+  {
+    "name": "Gabriel Santos Freitas",
+    "status": true,
+    "email": "gabriel.freitas@poli.digital",
+    "password": "SantosFreitas@Coins2023"
+  },
+  {
+    "name": "Gabriel Silva Miranda",
+    "status": true,
+    "email": "gabriel.miranda@poli.digital",
+    "password": "SilvaMiranda@Coins2023"
+  },
+  {
+    "name": "Geovanna Soares de Souza",
+    "status": true,
+    "email": "geovanna.soares@poli.digital",
+    "password": "Vanna@Coins2023"
+  },
+  {
+    "name": "Geraldo Eliezer de Morais",
+    "status": true,
+    "email": "geraldo.morais@poli.digital",
+    "password": "Eliezer@Coins2023"
+  },
+  {
+    "name": "Gervásio Ramos do Rosário Júnior",
+    "status": true,
+    "email": "gervasio.ramos@poli.digital",
+    "password": "Ramos@Coins2023"
+  },
+  {
+    "name": "Giovanna Lyssa de Lima Brito",
+    "status": true,
+    "email": "lyssa.lima@poli.digital",
+    "password": "GiLyssa@Coins2023"
+  },
+  {
+    "name": "Giselle Ribeiro de Souza Primo",
+    "status": true,
+    "email": "giselle.ribeiro@poli.digital",
+    "password": "Ribeiro@Coins2023"
+  },
+  {
+    "name": "Guilherme Fernandes da Cruz",
+    "status": true,
+    "email": "guilherme.cruz@poli.digital",
+    "password": "Cruz@Coins2023"
+  },
+  {
+    "name": "Guilherme Henrique Pessoa de Oliveira",
+    "status": true,
+    "email": "guilherme.pessoa@poli.digital",
+    "password": "Pessoa@Coins2023"
+  },
+  {
+    "name": "Guilherme Silva Marques",
+    "status": true,
+    "email": "guilherme.marques@poli.digital",
+    "password": "Marques@Coins2023"
+  },
+  {
+    "name": "Heinrych Matheus Gomes Andrade",
+    "status": true,
+    "email": "heinrych.gomes@poli.digital",
+    "password": "HeinRych@Coins2023"
+  },
+  {
+    "name": "Heitor de Sousa Naves",
+    "status": true,
+    "email": "heitor.sousa@poli.digital",
+    "password": "Naves@Coins2023"
+  },
+  {
+    "name": "Henrique de Oliveira Santos",
+    "status": true,
+    "email": "henrique.oliveira@poli.digital",
+    "password": "OliveiraSantos@Coins2023"
+  },
+  {
+    "name": "Hugo Fernando Ferraz dos Passos",
+    "status": true,
+    "email": "hugo.passos@poli.digital",
+    "password": "Ferraz@Coins2023"
+  },
+  {
+    "name": "Isabella Félix Espíndola ",
+    "status": true,
+    "email": "isabella.espindola@poli.digital",
+    "password": "Espíndola@Coins2023"
+  },
+  {
+    "name": "Ítalo Felipe Lira de Morais",
+    "status": true,
+    "email": "italo@poli.digital",
+    "password": "Lira@Coins2023"
+  },
+  {
+    "name": "Iury Vieira do Nascimento",
+    "status": true,
+    "email": "iury.vieira@poli.digital",
+    "password": "Vieira@Coins2023"
+  },
+  {
+    "name": "Jair Souza Meira Rodrigues",
+    "status": true,
+    "email": "jair.souza@poli.digital",
+    "password": "SouzaMeira@Coins2023"
+  },
+  {
+    "name": "Jennifer Martins da Silva",
+    "status": true,
+    "email": "jennifer.martins@poli.digital",
+    "password": "Martins@Coins2023"
+  },
+  {
+    "name": "Jerferson Correia do Nascimento",
+    "status": true,
+    "email": "jerferson@poli.digital",
+    "password": "Correia@Coins2023"
+  },
+  {
+    "name": "João Lucas Fernandes Martins",
+    "status": true,
+    "email": "joao.lucas@poli.digital",
+    "password": "FernandesJolu@Coins2023"
+  },
+  {
+    "name": "José Augusto Batista dos Santos",
+    "status": true,
+    "email": "jose.augusto@poli.digital",
+    "password": "Batista@Coins2023"
+  },
+  {
+    "name": "Juliana Maria Neves Correa",
+    "status": true,
+    "email": "juliana.correa@poli.digital",
+    "password": "Neves@Coins2023"
+  },
+  {
+    "name": "Julliana Carvalho Reis",
+    "status": true,
+    "email": "julliana.reis@poli.digital",
+    "password": "Reis@Coins2023"
+  },
+  {
+    "name": "Juscelino Ramos dos Santos",
+    "status": true,
+    "email": "juscelino.ramos@poli.digital",
+    "password": "RamosSantos@Coins2023"
+  },
+  {
+    "name": "Kellen Parreira Prado",
+    "status": true,
+    "email": "kellen.parreira@poli.digital",
+    "password": "Parreira@Coins2023"
+  },
+  {
+    "name": "Kelly Soares de Paula",
+    "status": true,
+    "email": "kelly.soares@poli.digital",
+    "password": "SoaresPaula@Coins2023"
+  },
+  {
+    "name": "Kennedy Moreira Gonçalves",
+    "status": true,
+    "email": "kennedy.moreira@poli.digital",
+    "password": "Moreira@Coins2023"
+  },
+  {
+    "name": "Larissa Carvalho Faleiro de Almeida",
+    "status": true,
+    "email": "larissa.faleiro@poli.digital",
+    "password": "Faleiro@Coins2023"
+  },
+  {
+    "name": "Larissa dos Santos Fernandes",
+    "status": true,
+    "email": "larissa.santos@poli.digital",
+    "password": "Fernandes@Coins2023"
+  },
+  {
+    "name": "Larissa Nunes Caetano",
+    "status": true,
+    "email": "larissa.nunes@poli.digital",
+    "password": "NunesLari@Coins2023"
+  },
+  {
+    "name": "Lineu Felipe Gomes Canha",
+    "status": true,
+    "email": "lineu.canha@poli.digital",
+    "password": "Canha@Coins2023"
+  },
+  {
+    "name": "Lucas Alves Da Silva",
+    "status": true,
+    "email": "lucas.alves@poli.digital",
+    "password": "AlvesLucas@Coins2023"
+  },
+  {
+    "name": "Lucas Gabriel Barbosa Alves",
+    "status": true,
+    "email": "lucas.gabriel@poli.digital",
+    "password": "BarbosaAlves@Coins2023"
+  },
+  {
+    "name": "Luciana Rodrigues de Oliveira",
+    "status": true,
+    "email": "luciana.rodrigues@poli.digital",
+    "password": "Rodrigues@Coins2023"
+  },
+  {
+    "name": "Maicon Douglas Barba Ramos",
+    "status": false,
+    "email": "maicon.douglas@poli.digital",
+    "password": "Barba@Coins2023"
+  },
+  {
+    "name": "Manoel Antonio Jansen Melo Neto",
+    "status": true,
+    "email": "manoel.antonio@poli.digital",
+    "password": "Jansen@Coins2023"
+  },
+  {
+    "name": "Marcos Vinycius Sousa",
+    "status": true,
+    "email": "marcos.sousa@poli.digital",
+    "password": "Sousa@Coins2023"
+  },
+  {
+    "name": "Marcus Vinicius Pereira",
+    "status": true,
+    "email": "marcus.vinicius@poli.digital",
+    "password": "Pereira@Coins2023"
+  },
+  {
+    "name": "Maria Clara Alves Pires Costa",
+    "status": true,
+    "email": "lineu.canha@poli.digital",
+    "password": "Pires@Coins2023"
+  },
+  {
+    "name": "Maria Clara da Silva Pinto",
+    "status": true,
+    "email": "maria.silva@poli.digital",
+    "password": "Silva@Coins2023"
+  },
+  {
+    "name": "Maria Clara Gomes Mendes de Araújo",
+    "status": true,
+    "email": "maria.mendes@poli.digital",
+    "password": "Gomes@Coins2023"
+  },
+  {
+    "name": "Mariana Casetta de Azevedo",
+    "status": true,
+    "email": "mariana.casetta@poli.digital",
+    "password": "Casetta@Coins2023"
+  },
+  {
+    "name": "Mariana Magre Machado",
+    "status": true,
+    "email": "mariana.magre@poli.digital",
+    "password": "Magre@Coins2023"
+  },
+  {
+    "name": "Mariane da Cruz Santos",
+    "status": true,
+    "email": "mariane.cruz@poli.digital",
+    "password": "CruzMari@Coins2023"
+  },
+  {
+    "name": "Marina Santos Vieira",
+    "status": true,
+    "email": "marina.santos@poli.digital",
+    "password": "Santos@Coins2023"
+  },
+  {
+    "name": "Marina Vitor Correia Ferreira",
+    "status": true,
+    "email": "marina.vitor@poli.digital",
+    "password": "Ferreira@Coins2023"
+  },
+  {
+    "name": "Matheus Nunes Sobrinho",
+    "status": true,
+    "email": "matheus.nunes@poli.digital",
+    "password": "Nunes@Coins2023"
+  },
+  {
+    "name": "Nadhia Cristina Ferreira de Morais Gomes ",
+    "status": true,
+    "email": "nadhia.cristina@poli.digital",
+    "password": "NadFerreira@Coins2023"
+  },
+  {
+    "name": "Nataly Dolavale de Freitas",
+    "status": true,
+    "email": "nataly.dolavale@poli.digital",
+    "password": "Dolavale@Coins2023"
+  },
+  {
+    "name": "Nathallia Jhennifer Magalhães Machado",
+    "status": true,
+    "email": "nathallia.machado@poli.digital",
+    "password": "Magalhães@Coins2023"
+  },
+  {
+    "name": "Nikole Souza de Almeida",
+    "status": true,
+    "email": "nikole.souza@poli.digital",
+    "password": "Souza@Coins2023"
+  },
+  {
+    "name": "Paulo Gabriel Ribeiro dos Santos",
+    "status": true,
+    "email": "paulo.gabriel@poli.digital",
+    "password": "RibeiroSantos@Coins2023"
+  },
+  {
+    "name": "Paulo Patrick Buzeli",
+    "status": true,
+    "email": "paulo.buzeli@poli.digital",
+    "password": "Buzeli@Coins2023"
+  },
+  {
+    "name": "Railma Roseno Dantas",
+    "status": true,
+    "email": "railma.dantas@poli.digital",
+    "password": "Roseno@Coins2023"
+  },
+  {
+    "name": "Raphael Antonio Domingues De Oliveira",
+    "status": true,
+    "email": "raphael.oliveira@poli.digital",
+    "password": "Domingues@Coins2023"
+  },
+  {
+    "name": "Rayan Teixeira Oliveira Leite",
+    "status": true,
+    "email": "rayan.teixeira@poli.digital",
+    "password": "Teixeira@Coins2023"
+  },
+  {
+    "name": "Renan Bispo Ariceto",
+    "status": true,
+    "email": "renan.bispo@poli.digital",
+    "password": "Bispo@Coins2023"
+  },
+  {
+    "name": "Renato Fonseca Caetano",
+    "status": true,
+    "email": "renato.fonseca@poli.digital",
+    "password": "Fonseca@Coins2023"
+  },
+  {
+    "name": "Rhubya Braz Da Silva",
+    "status": true,
+    "email": "rhubya.braz@poli.digital",
+    "password": "Braz@Coins2023"
+  },
+  {
+    "name": "Sara de Souza Prado",
+    "status": true,
+    "email": "sara.souza@poli.digital",
+    "password": "Prado@Coins2023"
+  },
+  {
+    "name": "Sarah Jéssica da Silva Menezes",
+    "status": true,
+    "email": "sarah@poli.digital",
+    "password": "Silme@Coins2023"
+  },
+  {
+    "name": "Saulo Daniel Barbosa Soares",
+    "status": true,
+    "email": "saulo.daniel@poli.digital",
+    "password": "Barbosa@Coins2023"
+  },
+  {
+    "name": "Suelen Patricia de Brito Pires",
+    "status": true,
+    "email": "suelen.patricia@poli.digital",
+    "password": "Brito@Coins2023"
+  },
+  {
+    "name": "Tatiana Lopes Rodrigues",
+    "status": true,
+    "email": "tatiana.lopes@poli.digital",
+    "password": "Lopes@Coins2023"
+  },
+  {
+    "name": "Thayron Feitosa de Matos",
+    "status": false,
+    "email": "thayron.feitosa@poli.digital",
+    "password": "Feitosa@Coins2023"
+  },
+  {
+    "name": "Thiago Carvalho de Oliveira",
+    "status": true,
+    "email": "thiago.carvalho@poli.digital",
+    "password": "Carvalho@Coins2023"
+  },
+  {
+    "name": "Timóteo Luis de Paula Limiro",
+    "status": true,
+    "email": "timoteo.luis@poli.digital",
+    "password": "Limiro@Coins2023"
+  },
+  {
+    "name": "Vinicius Pereira Leite",
+    "status": true,
+    "email": "vinicius.leite@poli.digital",
+    "password": "Leite@Coins2023"
+  },
+  {
+    "name": "Vitor Alves de Brito",
+    "status": true,
+    "email": "vitor.brito@poli.digital",
+    "password": "Alves@Coins2023"
+  },
+  {
+    "name": "Wallysson da Silva Rosa",
+    "status": true,
+    "email": "wallysson@poli.digital",
+    "password": "Rosa@Coins2023"
+  },
+  {
+    "name": "Wanderlan Braz de Paula Junior",
+    "status": true,
+    "email": "wanderlan.junior@poli.digital",
+    "password": "PaulaJr@Coins2023"
+  },
+  {
+    "name": "Willian Feitosa Linhares",
+    "status": true,
+    "email": "willian.linhares@poli.digital",
+    "password": "Linhares@Coins2023"
+  },
+  {
+    "name": "Yara Rodrigues Santiago",
+    "status": false,
+    "email": "yara.santiago@poli.digital",
+    "password": "Santiago@Coins2023"
+  },
+  {
+    "name": "Yasmin Christ de Vasconcellos",
+    "status": true,
+    "email": "yasmin.christ@poli.digital",
+    "password": "Vasconcellos@Coins2023"
+  },
+  {
+    "name": "Yuri De Castro Alcantara Rezende",
+    "status": true,
+    "email": "yuri.castro@poli.digital",
+    "password": "Rezende@Coins2023"
+  }
+]
