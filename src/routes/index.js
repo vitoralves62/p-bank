@@ -4,6 +4,7 @@ import app from "../app.js";
 import authRoutes from "./authRoutes.js";
 import rolesRoutes from "./roleRotes.js";
 import permissionsRoutes from "./permissionsRoutes.js";
+import securityRoutes from "./securityRoutes.js";
 
 const configRoutes = express.Router()
     configRoutes.get('/', (req, res) => {
@@ -14,7 +15,8 @@ const configRoutes = express.Router()
        authRoutes,
        userRoutes,
        rolesRoutes,
-       permissionsRoutes
+       permissionsRoutes,
+       securityRoutes
        
     )
 ;

@@ -2,7 +2,7 @@ import express from "express";
 import Sequelize from 'sequelize';
 import UsersService from "../services/UsersServices.js";
 import db from "../database/models/index.js";
-import UserDTO from "../services/userDTO.js";
+import UserDTO from "../DTOs/userDTO.js";
 const Users = db.Users;
 
 class UsersController {

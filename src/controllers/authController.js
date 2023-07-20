@@ -11,9 +11,8 @@ class AuthController {
 
             res.status(200).send(login)
         } catch (error) {
-            //console.log('Erro do Queiroz');
             console.log(error);
-            res.status(401).send({message: 'Mensagem do Queiroz' + error.message})
+            res.status(401).send({message: error.message})
         }
     }
 }

@@ -4,7 +4,7 @@ import pkg from 'bcryptjs';
 const { hash } = pkg;
 import { UUID, UUIDV4 } from "sequelize";
 import { v4 as uuidv4 } from 'uuid';
-import UserDTO from "./userDTO.js";
+import UserDTO from "../DTOs/userDTO.js";
 import UsersController from "../controllers/UsersController.js";
 
 class UsersService {

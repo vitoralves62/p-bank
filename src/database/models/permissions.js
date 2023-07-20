@@ -5,9 +5,9 @@ export default (sequelize, DataTypes) => {
     static associate(models) {
       permissions.belongsToMany(models.Users, {
         through: models.users_permissions,
-        as: 'permissions_users',
+        as: 'users_with_permissions',
         foreignKey: 'permission_id'
-      })
+      });
       permissions.belongsToMany(models.roles, {
         through: models.roles_permissions,
         as: 'permissions_roles',

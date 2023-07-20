@@ -1,7 +1,7 @@
 import express from "express";  
 import db from "../database/models/index.js";
 import RolesService from "../services/rolesServices.js";
-import RolesDTO from "../services/rolesDTO.js";
+import RolesDTO from "../DTOs/rolesDTO.js";
 const Role = db.roles;
 
 

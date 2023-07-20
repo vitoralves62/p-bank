@@ -1,5 +1,5 @@
 import db from "../database/models/index.js";
-import PermissionsDTO from "../services/permissionsDTO.js";
+import PermissionsDTO from "../DTOs/permissionsDTO.js";
 import PermissionsServices from "../services/permissionsServices.js";
 const perm = db.permissions;
 
