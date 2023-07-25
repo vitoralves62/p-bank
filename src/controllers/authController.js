@@ -8,6 +8,7 @@ class AuthController {
         
         try {
             const login = await authServices.login({email, password})
+            console.log(req.body);
 
             res.status(200).send(login)
         } catch (error) {

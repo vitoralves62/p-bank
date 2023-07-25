@@ -67,12 +67,18 @@ class securityService {
         {
           model: db.roles,
           as: 'roleS_for_users',
-          attributes: ['id', 'rolename', 'roledec']
+          attributes: ['id', 'rolename', 'roledec'],
+          through: {
+            attributes: [],
+        }
         },
         {
           model: db.permissions,
           as: 'permissions_for_users',
-          attributes: ['id', 'permname', 'permdesc']
+          attributes: ['id', 'permname', 'permdesc'],
+          through: {
+            attributes: [],
+        }
         }
       ],
       where: {
@@ -89,11 +95,14 @@ class securityService {
         include: [{
             model: db.permissions,
             as: 'permissions_roles',
-            attributes: ['id', 'permname', 'permdesc']
+            attributes: ['id', 'permname', 'permdesc'],
+            through: {
+              attributes: [],
+          }
         }]
     })
     if(!findRole){
-        throw new Error ('Cargo incorreto.')
+        throw new Error ('Cargo inexstente.')
     }
     const permissionsRegistered = await db.permissions.findAll({
         where: {
@@ -112,7 +121,10 @@ class securityService {
             {
                 model: db.permissions,
                 as: 'permissions_roles',
-                attributes: ['id', 'permname', 'permdesc']
+                attributes: ['id', 'permname', 'permdesc'],
+                through: {
+                  attributes: [],
+              }
             }
         ],
         where: {

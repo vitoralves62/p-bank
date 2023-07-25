@@ -10,12 +10,49 @@ import UsersController from "../controllers/UsersController.js";
 class UsersService {
 
     static async getUserPage(){
-        const user = await db.Users.findAll()
+        const user = await db.Users.findAll({
+            include: [
+                {
+                    model: db.roles,
+                    as: 'roleS_for_users',
+                    attributes: ['id', 'rolename', 'roledec'],
+                    through: {
+                        attributes: [],
+                    }
+                },
+                {
+                    model: db.permissions,
+                    as: 'permissions_for_users',
+                    attributes: ['id', 'permname', 'permdesc'],
+                    through: {
+                        attributes: []
+                    }
+                }
+            ]
+        })
         return user;
     }
     
     static async getUserByID(id) {
         const user = await db.Users.findOne({
+            include: [
+                {
+                    model: db.roles,
+                    as: 'roleS_for_users',
+                    attributes: ['id', 'rolename', 'roledec'],
+                    through: {
+                        attributes: [],
+                    }
+                },
+                {
+                    model: db.permissions,
+                    as: 'permissions_for_users',
+                    attributes: ['id', 'permname', 'permdesc'],
+                    through: {
+                        attributes: []
+                    }
+                }
+            ],
             where:{
                 id: id
             }

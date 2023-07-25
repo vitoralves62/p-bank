@@ -9,9 +9,11 @@ class UsersController {
     static getUserPage = async (req, res) => {
         try {
             const users = await UsersService.getUserPage()
+            console.log("cheguei a entrar no controller")
             res.status(200).send(users)
         } catch (error) {
             res.status(400).send({ message: error.message });
+            console.log("cheguei a entrar no controller")
         }
     }
 
