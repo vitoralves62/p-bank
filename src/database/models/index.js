@@ -1,4 +1,4 @@
-import { Sequelize } from 'sequelize';
+import  Sequelize from 'sequelize';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -25,8 +25,8 @@ const modelModules = [
   import('./permissions.js'),
   import('./roles_permissions.js'),
   import('./users_permissions.js'),
-  import('./users_roles.js')
-  // adicione outros modelos aqui, se houver
+  import('./users_roles.js'),
+  import('./balance.js')
 ];
 
 // Inicializar os modelos

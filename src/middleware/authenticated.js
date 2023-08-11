@@ -14,10 +14,9 @@ export default async (req, res, next) => {
     try {
         const decodedToken = verify(accessToken, jsonSecret.secret);
 
-        const { email, senha, id } = decodedToken; 
+        const { email, id } = decodedToken; 
         req.email = email;
-        req.senha = senha;
-        req.id = id; // Definir o id do usuário no objeto "req"
+        req.id = id;
 
         return next();
 

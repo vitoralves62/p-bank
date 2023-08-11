@@ -21,7 +21,7 @@ class UsersController {
         try{
             const id = req.params.id
             const user = await UsersService.getUserByID(id)
-            res.status(200).send(user);
+            res.status(200).json(user);
         }
         catch(error) {
             res.status(400).send({ message: error.message });
@@ -68,6 +68,21 @@ class UsersController {
         }
     }
     
+    static loginUser = async (req, res) => {
+        const { email, password } = req.body;
+    
+        try {
+          const accessToken = await UsersService.loginUser(email, password);
+    
+          if (accessToken) {
+            res.status(200).json({ accessToken });
+          } else {
+            res.status(401).json({ message: 'Credenciais inválidas' });
+          }
+        } catch (error) {
+          res.status(500).json({ message: 'Erro interno do servidor - Deu ruim meu mano' });
+        }
+      }
 }
 
 export default UsersController;

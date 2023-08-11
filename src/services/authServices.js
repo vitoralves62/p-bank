@@ -7,8 +7,9 @@ import jsonSecret from "../config/jsonSecret.js";
 const Users = db.Users;
 
 class AuthService {
+    
     async login(dto){
-        const {id, name, status, email, password} = dto;
+        const {email, password} = dto;
         const user = await db.Users.findOne({
             attributes: ['id', 'email', 'password'],
             where: {
@@ -23,13 +24,14 @@ class AuthService {
             throw new Error('Usuário ou senha inválido')
         }
 
-        const accessToken = sign({
-            id: user.id,
-            email: user.email
-        }, jsonSecret.secret, {
-            expiresIn: 86400
-        })
+        const accessToken = this.generateAccessToken(user.id, user.email);
         return { accessToken }
+    }
+
+    generateAccessToken(id, email) {
+        return sign({ id, email }, jsonSecret.secret, {
+            expiresIn: 84600
+        });
     }
 }
 

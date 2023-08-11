@@ -2,10 +2,7 @@ import db from "../database/models/index.js";
 const Users = db.Users;
 import pkg from 'bcryptjs';
 const { hash } = pkg;
-import { UUID, UUIDV4 } from "sequelize";
-import { v4 as uuidv4 } from 'uuid';
-import UserDTO from "../DTOs/userDTO.js";
-import UsersController from "../controllers/UsersController.js";
+
 
 class UsersService {
 
@@ -51,6 +48,12 @@ class UsersService {
                     through: {
                         attributes: []
                     }
+                },
+                {
+                    model: db.balance,
+                    as: 'balance',
+                    attributes: ['value', 'user_id'],
+                   
                 }
             ],
             where:{
@@ -143,6 +146,22 @@ class UsersService {
         }
     }
 
+
+    static async loginUser(id, email, password) {
+        // Encontrar o usuário pelo email
+        const user = await Users.findOne({
+          where: { email: email },
+        });
+    
+        // Se o usuário não for encontrado ou a senha não corresponder, retornar null
+        if (!user || !(await bcrypt.compare(password, user.password))) {
+          return null;
+        }
+    
+        // Se a senha corresponder, gerar e retornar um token de acesso
+        const accessToken = accessToken(user.id); // Implemente este método para gerar um token JWT
+        return accessToken;
+      }
 }
 
 export default UsersService;

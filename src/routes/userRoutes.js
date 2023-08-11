@@ -6,11 +6,13 @@ import permissions from "../middleware/permissions.js";
 
 const userRoutes = express.Router();
 
+userRoutes.post("/user/login", UsersController.loginUser);
+
 userRoutes.use(authenticated);
 
 userRoutes
     .get('/home', roles(["Administrador"]), UsersController.getUserPage)
-    .get('/home/:id', roles(["Administrador"]), UsersController.getUserByID)
+    .get('/user/:id', UsersController.getUserByID)
     .post('/admin', roles(["Administrador"]), UsersController.postUser)
     .put('/admin/:id/edit', roles(["Administrador"]), UsersController.putUser)
     .delete('/admin/delete/:id', roles(["Administrador"]), UsersController.deleteUser)

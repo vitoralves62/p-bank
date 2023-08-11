@@ -13,6 +13,10 @@ export default (sequelize, DataTypes) => {
         as: 'permissions_for_users',
         foreignKey: 'user_id'
       })
+      Users.hasOne(models.balance, {
+        foreignKey: 'user_id',
+        as: 'balance'
+      })
     }
   }
   Users.init(

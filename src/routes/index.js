@@ -5,6 +5,7 @@ import authRoutes from "./authRoutes.js";
 import rolesRoutes from "./roleRotes.js";
 import permissionsRoutes from "./permissionsRoutes.js";
 import securityRoutes from "./securityRoutes.js";
+import BalanceRoutes from "./balanceRoutes.js";
 
 const configRoutes = express.Router()
     configRoutes.get('/', (req, res) => {
@@ -14,6 +15,7 @@ const configRoutes = express.Router()
        express.json(),
        authRoutes,
        userRoutes,
+       BalanceRoutes,
        rolesRoutes,
        permissionsRoutes,
        securityRoutes

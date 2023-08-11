@@ -4,11 +4,17 @@ const authServices = new AuthService;
 
 class AuthController {
     static async login(req,res) {
-        const {email, password} = req.body
-        
+
+    
         try {
+            let email = req.body.email;
+            let password = req.body.password;
+    
+            if(!email || !password){
+                res.status(401).send({message: 'Os campos email e senha são obrigatórios.'})
+            }
+
             const login = await authServices.login({email, password})
-            console.log(req.body);
 
             res.status(200).send(login)
         } catch (error) {
