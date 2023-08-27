@@ -3,8 +3,10 @@ import pkg from 'bcryptjs';
 const { compare } = pkg;
 import pkg2 from 'jsonwebtoken';
 const { sign } = pkg2;
-import jsonSecret from "../config/jsonSecret.js";
 const Users = db.Users;
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 class AuthService {
     
@@ -29,7 +31,8 @@ class AuthService {
     }
 
     generateAccessToken(id, email) {
-        return sign({ id, email }, jsonSecret.secret, {
+        const secret = process.env.SECRET;
+        return sign({ id, email }, secret, {
             expiresIn: 84600
         });
     }

@@ -2,11 +2,9 @@ FROM node:16
 
 WORKDIR /usr/app
 
-COPY package*.json ./
+COPY . .
 
 RUN npm install
-
-COPY src ./src
 
 EXPOSE 3000
 

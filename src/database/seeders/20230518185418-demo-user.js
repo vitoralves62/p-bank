@@ -1,20 +1,30 @@
 'use strict';
 
 const userData = require('./users.json');
+const { hash } = require('bcryptjs'); 
+const UsersController = require('../../controllers/UsersController.js');
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    const usersWithTimestamps = userData.map(user => ({
-      ...user,
-      createdAt: new Date(), // Define o valor atual para 'createdAt'
-      updatedAt: new Date() // Define o valor atual para 'updatedAt'
-    }));
+  up: async (queryInterface, Sequelize) => {
+    const controller = new UsersController(); // Create an instance of UsersController
+    const promises = userData.map(async user => {
+      const passHash = await hash(user.password, 15);
 
-    await queryInterface.bulkInsert('Users', usersWithTimestamps, {});
+      const userWithPassword = {
+        ...user,
+        password: passHash,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      };
+
+      return controller.postUser({ body: userWithPassword }); // Call the instance method
+    });
+
+    await Promise.all(promises);
   },
 
-  async down(queryInterface, Sequelize) {
+  down: async (queryInterface, Sequelize) => {
     await queryInterface.bulkDelete('Users', null, {});
   }
 };

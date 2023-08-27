@@ -1,7 +1,8 @@
 import app from "./app.js";
 
-const port = process.env.PORT || 3000;
+const rote = process.env.BACKEND_ROTE
+const port = process.env.BACKEND_PORT || 3005;
 
 app.listen(port, () => {
-    console.log(`Listening on port http://localhost:${port}`)
+    console.log(`Listening on port http://${rote}:${port}`)
 });

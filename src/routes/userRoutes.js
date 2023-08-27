@@ -13,7 +13,7 @@ userRoutes.use(authenticated);
 userRoutes
     .get('/home', roles(["Administrador"]), UsersController.getUserPage)
     .get('/user/:id', UsersController.getUserByID)
-    .post('/admin', roles(["Administrador"]), UsersController.postUser)
+    .post('/admin', UsersController.postUser)
     .put('/admin/:id/edit', roles(["Administrador"]), UsersController.putUser)
     .delete('/admin/delete/:id', roles(["Administrador"]), UsersController.deleteUser)
 

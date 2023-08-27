@@ -1,8 +1,11 @@
 import pkg from 'jsonwebtoken';
 const { verify } = pkg;
-import jsonSecret from "../config/jsonSecret.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export default async (req, res, next) => {
+    const secret = process.env.SECRET;
     const token = req.headers.authorization;
 
     if (!token) {
@@ -12,7 +15,7 @@ export default async (req, res, next) => {
     const [, accessToken] = token.split(" ");
 
     try {
-        const decodedToken = verify(accessToken, jsonSecret.secret);
+        const decodedToken = verify(accessToken, secret);
 
         const { email, id } = decodedToken; 
         req.email = email;
