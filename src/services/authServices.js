@@ -18,6 +18,7 @@ class AuthService {
                 email: email
             }
         })
+        console.log(user)
         if(!user){
             throw new Error('Usuário ou senha inválidos')
         }
